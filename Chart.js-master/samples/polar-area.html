@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Annual Theft in Austin 2015</title>
+		<script src="../Chart.js"></script>
+	</head>
+	<body>
+		<div id="canvas-holder" style="width:30%">
+			<canvas id="chart-area" width="300" height="300"/>
+		</div>
+
+
+	<script>
+
+		var polarData = [
+				{
+					value: 1939,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Jan"
+				},
+				{
+					value: 87,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Feb"
+				},
+				{
+					value: 2070,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "March"
+				},
+				{
+					value: 2086,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "April"
+				},
+				{
+					value: 1960,
+					color: "#FF85CB ",
+					highlight: "#616774",
+					label: "May"
+				},
+				{
+					value: 2028,
+					color: "#1FDA9A  ",
+					highlight: "#616774",
+					label: "June"
+				},
+				{
+					value: 2216,
+					color: "#FA6900",
+					highlight: "#616774",
+					label: "July"
+				},
+{
+					value: 2094,
+					color: "#F38630",
+					highlight: "#616774",
+					label: "August"
+				},
+				{
+					value: 1949,
+					color: "#E0E4CC",
+					highlight: "#616774",
+					label: "Sept"
+				},
+				{
+					value: 1927,
+					color: "#A7DBDB",
+					highlight: "#616774",
+					label: "Oct"
+				},
+				{
+					value: 383,
+					color: "#69D2E7",
+					highlight: "#616774",
+					label: "Nov"
+				}
+			];
+
+			window.onload = function(){
+				var ctx = document.getElementById("chart-area").getContext("2d");
+				window.myPolarArea = new Chart(ctx).PolarArea(polarData, {
+					responsive:true
+				});
+			};
+
+
+
+	</script>
+	</body>
+</html>

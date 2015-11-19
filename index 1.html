@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Chart Data Project</title>
+    <script src="Chart/Chart.js"></script>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    
+  
+
+    
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://theveronicaramirez.com/">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://theveronicaramirez.com/photography.html">Photography</a>
+                    </li>
+                    <li>
+                       <a href="https://twitter.com/Bella8121" target="_blank"> Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <h1>Dude!</h1>
+                <h2>Where's my car?!</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+            <h2 class="featurette-heading">Crime During
+                <span class="text-muted">SXSW 2015</span>
+            </h2>
+            <p class="lead">This Data was taking from the Austin Police Department Incident Report for the 2015 year. I took the data and filtered the dates to show the dates in which SXSW took place this year, which was Mar 13-22. From there I again filtered each crime and took the totals from those crimes to create this pie graph. As you can see form this, theft is the highest crime during SXSW with assaults closely behind.</p>
+
+             <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1An1ZDTpJQVbbiUMeMKCyLJ3EaFLS0EiGHZDDbnrW6hQ/pubchart?oid=764475900&amp;format=interactive"></iframe>
+             
+</div>
+<div> 
+       <hr class="featurette-divider"> 
+       
+        <!-- Second Featurette -->
+          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		  <style type="text/css">
+${demo.css}
+		  </style>
+		
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'How Theft Stacks up ',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'During SXSW 2015',
+            x: -20
+        },
+        xAxis: {
+            categories: ['Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18',
+                'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22']
+        },
+        yAxis: {
+            title: {
+                text: '# of Incidents Reported'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ' incidents '
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Auto Theft',
+            data: [14, 8, 10, 6, 7, 7, 14, 6 , 8, 8]
+        }, {
+            name: 'Shoplifting',
+            data: [8, 6, 10, 5, 7, 2, 10, 13, 14, 9]
+        }, {
+            name: 'Uncategorized Thefts',
+            data: [42, 33, 29, 35, 42, 37, 35, 44, 30, 20]
+        }, {
+            name: 'Bicycle Theft',
+            data: [5, 10, 8, 4, 6, 5, 4, 4, 3, 10]
+        }]
+    });
+});
+	</script>
+
+     <script src="js/highcharts.js"></script>
+     <script src="js/modules/exporting.js"></script>
+
+     <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+        
+        <!-- fourth Featurette -->
+        <div class="featurette" id="contact">
+            <h2 class="featurette-heading">Charts.js
+                <span class="text-muted">.</span>
+            </h2>
+        <div style="width:30%">
+			<div>
+				<canvas id="canvas" height="450" width="600"></canvas>
+			</div>
+		</div>
+		
+	
+		
+	<script>
+		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		var lineChartData = {
+			labels : ["Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19", "Mar 20", "Mar 21", "Mar 22"],
+			datasets : [
+				{
+					label: "Auto Theft",
+					fillColor : "rgba(220,220,220,0.2)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : [14, 8, 10, 6, 7, 7, 14, 6, 8,8 ]
+				},
+				{
+					label: "Shop Lifting",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [8, 6, 10, 5, 7, 2, 10, 13, 14, 9]
+				},
+				{
+					label: "Uncategorized Thefts",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [42, 33, 29, 35, 42, 37, 35, 44, 30, 20]
+				},
+				{
+					label: "Bicycle Theft",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [5, 10, 8, 4, 6, 5, 4, 4, 3, 10]
+				}
+				
+			]
+
+		}
+
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myLine = new Chart(ctx).Line(lineChartData, {
+			responsive: true
+		});
+		
+	}
+
+	</script>
+	<hr class="featurette-divider">
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Veronica Ramirez 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
